@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Comentario
+
 
         listPais = findViewById(R.id.imageCountry)
 
@@ -32,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         adapterPais.notifyDataSetChanged()
 
 
+        // Error ...
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override
             fun onQueryTextSubmit(query: String?): Boolean {
