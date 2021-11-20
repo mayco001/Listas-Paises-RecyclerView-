@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">lista de paises</string>
+
+    <string name="canada">A bandeira do Canadá é uma tribanda composta por um quadrado central branco
+        (chamado de pala canadiana por causa desta bandeira) com dois campos vermelhos nas laterais
+        exatamente da metade do tamanho que o quadrado. No centro está uma folha de bordo estilizada
+        vermelha com onze pontas.</string>
+
+    <string name="alemanha">A bandeira da Alemanha é um tricolor que consiste em três faixas
+        horizontais iguais mostrando as cores nacionais da Alemanha: preto, vermelho e dourado.
+        Esta versão foi adotada pela primeira vez como a bandeira nacional da Alemanha moderna em
+        1919, durante a República de Weimar, até 1933.</string>
+
+    <string name="brasil">A Bandeira do Brasil constitui a bandeira nacional da República Federativa
+        do Brasil. É composta por uma base verde em forma de retângulo, sobreposta por um losango
+        amarelo e um círculo azul, no meio do qual está atravessada uma faixa branca com o lema
+        "Ordem e Progresso", em letras maiúsculas verdes.</string>
 </resources>

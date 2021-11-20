@@ -12,6 +12,7 @@ import com.mayco.listadepaises.R
 import com.mayco.listadepaises.model.Pais
 import com.mayco.listadepaises.utils.Constants.ALEMANHA
 import com.mayco.listadepaises.utils.Constants.BRASIL
+import com.mayco.listadepaises.utils.Constants.CANADA
 import kotlin.properties.Delegates
 
 class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(), Filterable {
@@ -21,14 +22,25 @@ class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(
         fun bind(item: Pais) {
             val nameCountry = itemView.findViewById<TextView>(R.id.countryountry)
             val imageView = itemView.findViewById<ImageView>(R.id.imageCountry)
+            val countryPais = itemView.findViewById<TextView>(R.id.discricao)
 
             with(itemView) {
                 nameCountry.text = item.name
                 if (item.name == ALEMANHA) {
-                    imageView.background = context.resources.getDrawable(R.drawable.alemanha)
+                   // imageView.background = context.resources.getDrawable(R.drawable.alemanha)
+                    imageView.setImageResource(R.drawable.alemanha)
+                    countryPais.setText((R.string.alemanha))
+
                 }
                 if (item.name == BRASIL) {
-                    imageView.background = context.resources.getDrawable(R.drawable.brasil)
+                   // imageView.background = context.resources.getDrawable(R.drawable.brasil)
+                    imageView.setImageResource(R.drawable.brasil)
+                    countryPais.setText(R.string.brasil)
+                }
+                if (item.name == CANADA){
+                    //imageView.background = context.resources.getDrawable((R.drawable.canada))
+                    imageView.setImageResource(R.drawable.canada)
+                    countryPais.setText(R.string.canada)
                 }
             }
         }

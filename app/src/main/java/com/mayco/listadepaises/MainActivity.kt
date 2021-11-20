@@ -8,14 +8,15 @@ import com.mayco.listadepaises.adapter.CountryAndapter
 import com.mayco.listadepaises.model.Pais
 import com.mayco.listadepaises.utils.Constants.ALEMANHA
 import com.mayco.listadepaises.utils.Constants.BRASIL
-import androidx.core.view.MenuItemCompat
+import com.mayco.listadepaises.utils.Constants.CANADA
 
 
 class MainActivity : AppCompatActivity() {
 
+    private var searchView: SearchView ?= null
     private var adapterPais = CountryAndapter()
-    private var listPais: RecyclerView? = null
-    val pais: List<Pais> = listOf(Pais(BRASIL), Pais(ALEMANHA))
+    private var listPais: RecyclerView ?= null
+    val pais: List<Pais> = listOf( Pais(BRASIL), Pais(ALEMANHA), Pais(CANADA) )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         // Comentario
 
 
-        listPais = findViewById(R.id.imageCountry)
+        listPais = findViewById(R.id.recylerCountry)
+        searchView = findViewById(R.id.searchView)
 
 
 
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
 
         // Error ...
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+        searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override
             fun onQueryTextSubmit(query: String?): Boolean {
                 adapterPais.filter.filter(query)
@@ -48,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
-
+        setupRecyclerView()
     }
 
     private fun setupRecyclerView() {
