@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">lista de paises</string>
+
+    <string name="canada">The flag of Canada is a triband made up of a central white square.
+        (called the Canadian visor because of this flag) with two red fields on the sides
+        exactly half the size of the square. In the center is a stylized maple leaf.
+        red with eleven points.</string>
+
+    <string name="alemanha">The flag of Germany is a tricolor consisting of three bands.
+        Equal horizontals showing the national colors of Germany: black, red and gold.
+        This version was first adopted as the national flag of modern Germany in
+        1919, during the Weimar Republic, until 1933.</string>
+
+    <string name="brasil">The Brazilian Flag constitutes the national flag of the Federative Republic
+        from Brazil. It consists of a green rectangle-shaped base, overlaid by a diamond
+        yellow and a blue circle, in the middle of which is crossed a white band with the motto
+        "Order and Progress", in green capital letters.</string>
+
+    <string name="estadosUnidos">The Flag of the United States of America, often referred to as
+        American flag, is the national flag of the United States. Consists of 13 horizontal bands
+        equal, 7 bands in red and 6 in white, in a blue rectangle in the upper corner
+        50 white stars (specifically referred to as the "union") appear, each symbolizing
+        a state in the country. </string>
+
+    <string name="japao">The flag of Japan has a white rectangular shape with a large disk.
+        crimson (representing the Sun) in the center, and is officially called Nisshōki (日章旗 "flag of the Sun"?)
+        in Japanese, although it is more commonly known as Hinomaru (日の丸 "sun disk"?)</string>
+</resources>
