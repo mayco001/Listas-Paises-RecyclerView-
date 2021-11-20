@@ -13,6 +13,8 @@ import com.mayco.listadepaises.model.Pais
 import com.mayco.listadepaises.utils.Constants.ALEMANHA
 import com.mayco.listadepaises.utils.Constants.BRASIL
 import com.mayco.listadepaises.utils.Constants.CANADA
+import com.mayco.listadepaises.utils.Constants.ESTADOSUNIDOS
+import com.mayco.listadepaises.utils.Constants.JAPAO
 import kotlin.properties.Delegates
 
 class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(), Filterable {
@@ -41,6 +43,14 @@ class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(
                     //imageView.background = context.resources.getDrawable((R.drawable.canada))
                     imageView.setImageResource(R.drawable.canada)
                     countryPais.setText(R.string.canada)
+                }
+                if(item.name == ESTADOSUNIDOS){
+                    imageView.setImageResource((R.drawable.estados_unidos))
+                    countryPais.setText(R.string.estadosUnidos)
+                }
+                if(item.name == JAPAO){
+                    imageView.setImageResource(R.drawable.japao)
+                    countryPais.setText(R.string.japao)
                 }
             }
         }

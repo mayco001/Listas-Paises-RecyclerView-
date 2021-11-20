@@ -15,4 +15,14 @@
         do Brasil. É composta por uma base verde em forma de retângulo, sobreposta por um losango
         amarelo e um círculo azul, no meio do qual está atravessada uma faixa branca com o lema
         "Ordem e Progresso", em letras maiúsculas verdes.</string>
+
+    <string name="estadosUnidos">A Bandeira dos Estados Unidos da América, muitas vezes referida como
+        bandeira americana,é a bandeira nacional dos Estados Unidos. Consiste em 13 faixas horizontais
+        iguais, sendo 7 faixas na cor vermelha e 6 na cor branca, num retângulo azul no canto superior
+        esquerdo aparecem 50 estrelas brancas (referido especificamente como a "união"), cada uma simbolizando
+        um estado do país. </string>
+
+    <string name="japao">A bandeira do Japão tem um formato retangular branco com um grande disco
+        carmesim (representando o Sol) no centro, e é oficialmente denominada Nisshōki (日章旗 "bandeira do Sol"?)
+        em japonês, embora seja mais comumente conhecida como Hinomaru (日の丸 "disco solar"?)</string>
 </resources>

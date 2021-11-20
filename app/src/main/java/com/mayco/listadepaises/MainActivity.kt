@@ -9,6 +9,8 @@ import com.mayco.listadepaises.model.Pais
 import com.mayco.listadepaises.utils.Constants.ALEMANHA
 import com.mayco.listadepaises.utils.Constants.BRASIL
 import com.mayco.listadepaises.utils.Constants.CANADA
+import com.mayco.listadepaises.utils.Constants.ESTADOSUNIDOS
+import com.mayco.listadepaises.utils.Constants.JAPAO
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     private var searchView: SearchView ?= null
     private var adapterPais = CountryAndapter()
     private var listPais: RecyclerView ?= null
-    val pais: List<Pais> = listOf( Pais(BRASIL), Pais(ALEMANHA), Pais(CANADA) )
+    val pais: List<Pais> = listOf( Pais(BRASIL), Pais(ALEMANHA), Pais(CANADA), Pais(ESTADOSUNIDOS), Pais(JAPAO) )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
