@@ -32,7 +32,7 @@ class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(
                 if (item.name == ALEMANHA) {
                    // imageView.background = context.resources.getDrawable(R.drawable.alemanha)
                     imageView.setImageResource(R.drawable.alemanha)
-                    countryPais.setText((R.string.alemanha))
+                    countryPais.setText(R.string.alemanha)
 
                 }
                 if (item.name == BRASIL) {
