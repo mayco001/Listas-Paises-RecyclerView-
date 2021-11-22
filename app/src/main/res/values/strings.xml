@@ -25,4 +25,9 @@
     <string name="japao">A bandeira do Japão tem um formato retangular branco com um grande disco
         carmesim (representando o Sol) no centro, e é oficialmente denominada Nisshōki (日章旗 "bandeira do Sol"?)
         em japonês, embora seja mais comumente conhecida como Hinomaru (日の丸 "disco solar"?)</string>
+
+    <string name="portugal">A Bandeira de Portugal constitui a bandeira nacional da República Portuguesa.
+        É oficialmente referida como Bandeira Nacional e informalmente como Bandeira das Quinas. Constitui
+        uma bandeira um bicolor, retangular com um campo desigual, dividido em verde na tralha, e vermelho
+        no batente</string>
 </resources>

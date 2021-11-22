@@ -17,7 +17,7 @@
 
     <View
         android:layout_width="1dp"
-        android:layout_height="199dp"
+        android:layout_height="201dp"
         android:layout_marginStart="5dp"
         android:background="@color/black"
         app:layout_constraintLeft_toRightOf="@+id/imageCountry"
@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:text="Country:"
+        android:textSize="16sp"
         app:layout_constraintLeft_toRightOf="@+id/imageCountry"
         app:layout_constraintTop_toTopOf="@+id/imageCountry" />
 
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:text="Name"
+        android:textSize="16sp"
         app:layout_constraintLeft_toRightOf="@+id/tittle"
         app:layout_constraintTop_toTopOf="@+id/tittle" />
 
@@ -55,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Description:"
+        android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="@+id/tittle"
         app:layout_constraintTop_toBottomOf="@+id/tittle" />
 
@@ -62,11 +65,11 @@
         android:id="@+id/discricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="shfisiuf"
-        android:maxWidth="200dp"
-        app:layout_constraintRight_toRightOf="@+id/line"
         android:layout_marginTop="15dp"
+        android:maxWidth="200dp"
+        android:text="shfisiuf"
         app:layout_constraintLeft_toLeftOf="@+id/description"
+        app:layout_constraintRight_toRightOf="@+id/line"
         app:layout_constraintTop_toBottomOf="@+id/description" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

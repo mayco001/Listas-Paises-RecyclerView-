@@ -11,6 +11,7 @@ import com.mayco.listadepaises.utils.Constants.BRASIL
 import com.mayco.listadepaises.utils.Constants.CANADA
 import com.mayco.listadepaises.utils.Constants.ESTADOSUNIDOS
 import com.mayco.listadepaises.utils.Constants.JAPAO
+import com.mayco.listadepaises.utils.Constants.PORTUGAL
 
 
 class MainActivity : AppCompatActivity() {
@@ -18,13 +19,15 @@ class MainActivity : AppCompatActivity() {
     private var searchView: SearchView ?= null
     private var adapterPais = CountryAndapter()
     private var listPais: RecyclerView ?= null
-    val pais: List<Pais> = listOf( Pais(BRASIL), Pais(ALEMANHA), Pais(CANADA), Pais(ESTADOSUNIDOS), Pais(JAPAO) )
+    val pais: List<Pais> = listOf(
+        Pais(BRASIL), Pais(ALEMANHA), Pais(CANADA), Pais(ESTADOSUNIDOS),
+        Pais(JAPAO), Pais(PORTUGAL) )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Comentario
+
 
 
         listPais = findViewById(R.id.recylerCountry)
@@ -38,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         adapterPais.notifyDataSetChanged()
 
 
-        // Error ...
+
         searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override
             fun onQueryTextSubmit(query: String?): Boolean {
