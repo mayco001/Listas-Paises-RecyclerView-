@@ -7,11 +7,10 @@
 
     <ImageView
         android:id="@+id/imageCountry"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp"
-        android:src="@drawable/alemanha"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
+        android:textStyle="bold"
         android:text="Country:"
         android:textSize="16sp"
         app:layout_constraintLeft_toRightOf="@+id/imageCountry"
@@ -55,6 +55,7 @@
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginTop="25dp"
         android:text="Description:"
         android:textSize="16sp"
@@ -67,9 +68,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:maxWidth="200dp"
-        android:text="shfisiuf"
+        android:text="Texto"
         app:layout_constraintLeft_toLeftOf="@+id/description"
         app:layout_constraintRight_toRightOf="@+id/line"
-        app:layout_constraintTop_toBottomOf="@+id/description" />
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

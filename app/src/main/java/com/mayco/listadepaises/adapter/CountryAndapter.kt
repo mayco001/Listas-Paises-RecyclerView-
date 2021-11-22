@@ -27,37 +27,13 @@ class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(
             val imageView = itemView.findViewById<ImageView>(R.id.imageCountry)
             val countryPais = itemView.findViewById<TextView>(R.id.discricao)
 
-            with(itemView) {
-                nameCountry.text = item.name
-                if (item.name == ALEMANHA) {
-                   // imageView.background = context.resources.getDrawable(R.drawable.alemanha)
-                    imageView.setImageResource(R.drawable.alemanha)
-                    countryPais.setText(R.string.alemanha)
 
-                }
-                if (item.name == BRASIL) {
-                   // imageView.background = context.resources.getDrawable(R.drawable.brasil)
-                    imageView.setImageResource(R.drawable.brasil)
-                    countryPais.setText(R.string.brasil)
-                }
-                if (item.name == CANADA){
-                    //imageView.background = context.resources.getDrawable((R.drawable.canada))
-                    imageView.setImageResource(R.drawable.canada)
-                    countryPais.setText(R.string.canada)
-                }
-                if(item.name == ESTADOSUNIDOS){
-                    imageView.setImageResource((R.drawable.estados_unidos))
-                    countryPais.setText(R.string.estadosUnidos)
-                }
-                if(item.name == JAPAO){
-                    imageView.setImageResource(R.drawable.japao)
-                    countryPais.setText(R.string.japao)
-                }
-                if(item.name == PORTUGAL){
-                    imageView.setImageResource((R.drawable.portugal))
-                    countryPais.setText(R.string.portugal)
-                }
-            }
+
+            nameCountry.text = item.name
+            imageView.setBackgroundResource(item.image)
+            countryPais.text = item.discretion
+
+
         }
     }
 

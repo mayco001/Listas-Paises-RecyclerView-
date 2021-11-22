@@ -16,18 +16,23 @@ import com.mayco.listadepaises.utils.Constants.PORTUGAL
 
 class MainActivity : AppCompatActivity() {
 
-    private var searchView: SearchView ?= null
+    private var searchView: SearchView? = null
     private var adapterPais = CountryAndapter()
-    private var listPais: RecyclerView ?= null
-    val pais: List<Pais> = listOf(
-        Pais(BRASIL), Pais(ALEMANHA), Pais(CANADA), Pais(ESTADOSUNIDOS),
-        Pais(JAPAO), Pais(PORTUGAL) )
+    private var listPais: RecyclerView? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
+        val pais: List<Pais> = listOf(
+            Pais(name = BRASIL, image = R.drawable.brasil, discretion = getString(R.string.brasil)),
+            Pais(name = ALEMANHA, image = R.drawable.alemanha, discretion = getString(R.string.alemanha)),
+            Pais(name = CANADA, image = R.drawable.canada, discretion = getString(R.string.canada)),
+            Pais(name = PORTUGAL, image = R.drawable.portugal, discretion = getString(R.string.portugal)),
+            Pais(name = JAPAO, image = R.drawable.japao, discretion = getString(R.string.japao))
+        )
 
 
         listPais = findViewById(R.id.recylerCountry)
