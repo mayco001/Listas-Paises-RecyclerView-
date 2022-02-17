@@ -13,39 +13,56 @@ import com.mayco.listadepaises.utils.Constants.ESTADOSUNIDOS
 import com.mayco.listadepaises.utils.Constants.JAPAO
 import com.mayco.listadepaises.utils.Constants.PORTUGAL
 
-
 class MainActivity : AppCompatActivity() {
 
     private var searchView: SearchView? = null
     private var adapterPais = CountryAndapter()
     private var listPais: RecyclerView? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         val pais: List<Pais> = listOf(
-            Pais(name = BRASIL, image = R.drawable.brasil, discretion = getString(R.string.brasil)),
-            Pais(name = ALEMANHA, image = R.drawable.alemanha, discretion = getString(R.string.alemanha)),
-            Pais(name = CANADA, image = R.drawable.canada, discretion = getString(R.string.canada)),
-            Pais(name = PORTUGAL, image = R.drawable.portugal, discretion = getString(R.string.portugal)),
-            Pais(name = JAPAO, image = R.drawable.japao, discretion = getString(R.string.japao))
+            Pais(
+                name = BRASIL,
+                image = R.drawable.brasil,
+                discretion = getString(R.string.brasil)
+            ),
+            Pais(
+                name = ALEMANHA,
+                image = R.drawable.alemanha,
+                discretion = getString(R.string.alemanha)
+            ),
+            Pais(
+                name = CANADA,
+                image = R.drawable.canada,
+                discretion = getString(R.string.canada)
+            ),
+            Pais(
+                name = PORTUGAL,
+                image = R.drawable.portugal,
+                discretion = getString(R.string.portugal)
+            ),
+            Pais(
+                name = JAPAO,
+                image = R.drawable.japao,
+                discretion = getString(R.string.japao)
+            ),
+            Pais(
+                name = ESTADOSUNIDOS,
+                image = R.drawable.estados_unidos,
+                discretion = getString(R.string.estadosUnidos)
+            )
         )
-
 
         listPais = findViewById(R.id.recylerCountry)
         searchView = findViewById(R.id.searchView)
-
-
 
         adapterPais.items = pais
         adapterPais.paisList = pais
         setupRecyclerView()
         adapterPais.notifyDataSetChanged()
-
-
 
         searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override
@@ -58,7 +75,6 @@ class MainActivity : AppCompatActivity() {
                 adapterPais.filter.filter(newText)
                 return true
             }
-
         })
         setupRecyclerView()
     }
@@ -69,4 +85,3 @@ class MainActivity : AppCompatActivity() {
         listPais?.layoutManager = manager
     }
 }
-

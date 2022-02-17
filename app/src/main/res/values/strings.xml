@@ -30,4 +30,10 @@
         É oficialmente referida como Bandeira Nacional e informalmente como Bandeira das Quinas. Constitui
         uma bandeira um bicolor, retangular com um campo desigual, dividido em verde na tralha, e vermelho
         no batente</string>
+
+
+    <string name="country" translatable="false">Country:</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="description" translatable="false">Description:</string>
+    <string name="body" translatable="false">body</string>
 </resources>

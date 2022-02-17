@@ -8,5 +8,4 @@ object Constants {
     val ESTADOSUNIDOS = "Estados unidos"
     val JAPAO = "Japão"
     val PORTUGAL = "Portugal"
-
 }

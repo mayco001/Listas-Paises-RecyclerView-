@@ -5,41 +5,56 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp">
 
-    <ImageView
-        android:id="@+id/imageCountry"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/imageCountryCard"
+        android:layout_width="102dp"
+        android:layout_height="95dp"
+        android:layout_margin="8dp"
+        app:cardElevation="2dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toLeftOf="@+id/viewLine"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:id="@+id/imageCountry"
+            android:layout_width="100dp"
+            android:layout_height="90dp" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
 
     <View
+        android:id="@+id/viewLine"
         android:layout_width="1dp"
         android:layout_height="201dp"
         android:layout_marginStart="5dp"
         android:background="@color/black"
-        app:layout_constraintLeft_toRightOf="@+id/imageCountry"
-        app:layout_constraintTop_toTopOf="@+id/imageCountry" />
+        app:layout_constraintLeft_toRightOf="@+id/imageCountryCard"
+        app:layout_constraintTop_toTopOf="@+id/imageCountryCard" />
 
     <TextView
         android:id="@+id/tittle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:textStyle="bold"
-        android:text="Country:"
+        android:layout_marginStart="50dp"
+        android:text="@string/country"
         android:textSize="16sp"
-        app:layout_constraintLeft_toRightOf="@+id/imageCountry"
-        app:layout_constraintTop_toTopOf="@+id/imageCountry" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintLeft_toRightOf="@+id/imageCountryCard"
+        app:layout_constraintTop_toTopOf="@+id/imageCountryCard" />
 
     <TextView
         android:id="@+id/countryountry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:text="Name"
+        android:layout_marginStart="15dp"
+        android:text="@string/name"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/line"
         app:layout_constraintLeft_toRightOf="@+id/tittle"
         app:layout_constraintTop_toTopOf="@+id/tittle" />
 
@@ -55,10 +70,10 @@
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
         android:layout_marginTop="25dp"
-        android:text="Description:"
+        android:text="@string/description"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="@+id/tittle"
         app:layout_constraintTop_toBottomOf="@+id/tittle" />
 
@@ -68,10 +83,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:maxWidth="200dp"
-        android:text="Texto"
+        android:text="@string/body"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@+id/description"
         app:layout_constraintRight_toRightOf="@+id/line"
-        app:layout_constraintTop_toBottomOf="@+id/description"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/description" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,16 +10,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mayco.listadepaises.R
 import com.mayco.listadepaises.model.Pais
-import com.mayco.listadepaises.utils.Constants.ALEMANHA
-import com.mayco.listadepaises.utils.Constants.BRASIL
-import com.mayco.listadepaises.utils.Constants.CANADA
-import com.mayco.listadepaises.utils.Constants.ESTADOSUNIDOS
-import com.mayco.listadepaises.utils.Constants.JAPAO
-import com.mayco.listadepaises.utils.Constants.PORTUGAL
 import kotlin.properties.Delegates
 
 class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(), Filterable {
-
 
     class CountryViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(item: Pais) {
@@ -27,13 +20,9 @@ class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(
             val imageView = itemView.findViewById<ImageView>(R.id.imageCountry)
             val countryPais = itemView.findViewById<TextView>(R.id.discricao)
 
-
-
             nameCountry.text = item.name
             imageView.setBackgroundResource(item.image)
             countryPais.text = item.discretion
-
-
         }
     }
 
@@ -43,7 +32,6 @@ class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(
         if (old != new) notifyDataSetChanged()
     }
     var filterList = ArrayList<Pais>()
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CountryViewHolder {
         return CountryViewHolder(
@@ -92,8 +80,3 @@ class CountryAndapter : RecyclerView.Adapter<CountryAndapter.CountryViewHolder>(
         }
     }
 }
-
-
-
-
-
